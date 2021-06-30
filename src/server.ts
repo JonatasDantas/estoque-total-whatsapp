@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response } from "express";
 import router from "./routes";
 import "express-async-errors";
 import dotenv from "dotenv";
-dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+const result = dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 import "./database";
 

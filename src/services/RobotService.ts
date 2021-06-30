@@ -10,7 +10,7 @@ interface Session {
 }
 
 class RobotService {
-    public QR_CODE_DIR = "../assets/qr-codes";
+    public QR_CODE_DIR = process.env.QR_CODE_PATH;
     private sessions: Session[] = [];
 
     public getSessionByName(name): Session {
